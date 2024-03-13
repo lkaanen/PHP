@@ -25,7 +25,7 @@ class Application
 
    public function run(): void
    {
-       $this->route->setPrefix($this->settings->getRootPath());
-       $this->route->start();
+      $this->route->setPrefix($this->settings->getRootPath());
+      Route::start();
    }
 }
