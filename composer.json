@@ -1,12 +1,12 @@
 {
-    "name": "stas2/htdocs",
+    "name": "lkaanen/htdocs",
     "description": "cool project",
     "type": "project",
     "license": "MIT",
     "authors": [
         {
-            "name": "viVo4s",
-            "email": "stas22900@mail.ru"
+            "name": "lkaanen",
+            "email": "romvik20@gmail.com"
         }
     ],
     "minimum-stability": "dev",
