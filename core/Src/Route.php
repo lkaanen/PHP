@@ -21,7 +21,7 @@ class Route
        }
    }
 
-   public static function start(): void
+   public function start(): void
    {
        $path = explode('?', $_SERVER['REQUEST_URI'])[0];
        $path = substr($path, strlen(self::$prefix) + 1);
