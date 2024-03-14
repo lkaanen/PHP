@@ -1,6 +1,5 @@
 {
-    "name": "lkaanen/htdocs",
-    "description": "cool project",
+    "name": "deti/pop-it-mvc",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -10,15 +9,5 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {
-        "php": "^7.4 | ^8.0"
-
-    },
-    "autoload": {
-        "psr-4": {
-            "Src\\": "core/Src/",
-            "": "app/"
-        }
-    }
- 
+    "require": {}
 }
