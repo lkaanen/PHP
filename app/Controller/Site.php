@@ -50,10 +50,4 @@ class Site
     app()->route->redirect('/hello');
     }
 
-    public function index(Request $request): string
-{
-   $posts = Post::where('id', $request->id)->get();
-   return (new View())->render('site.post', ['posts' => $posts]);
-}
-
 }

@@ -16,15 +16,10 @@ class Route
    //Используем методы трейта
    use SingletonTrait;
 
-   //Свойство для хранения текущего маршрута
-   private string $currentRoute = '';
+   private $currentRoute = '';
    private $currentHttpMethod;
-
-   //Свойство для префикса для всех маршрутов
-   private string $prefix = '';
-
-   //Классы для использования внешнего маршрутизатора
-   private RouteCollector $routeCollector;
+   private $prefix = '';
+   private $routeCollector;
 
    //Добавляет маршрут, устанавливает его текущим и возвращает объект
    public static function add($httpMethod, string $route, array $action): self
