@@ -4,6 +4,8 @@ namespace Controller;
 
 use Model\Post;
 use Src\View;
+use Model\User;
+
 call_user_func([new $class, $action], new Request());
 
 
@@ -20,4 +22,13 @@ class Site
    {
        return new View('site.hello', ['message' => 'hello working']);
    }
+
+   public function signup(Request $request): string
+   {
+       if ($request->method==='POST' && User::create($request->all())){
+           return new View('site.signup', ['message'=>'Вы успешно зарегистрированы']);
+       }
+       return new View('site.signup');
+   }
+
 }
