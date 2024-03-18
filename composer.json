@@ -1,0 +1,13 @@
+{
+    "name": "lkaanen/php",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lkaanen",
+            "email": "romvik20@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
